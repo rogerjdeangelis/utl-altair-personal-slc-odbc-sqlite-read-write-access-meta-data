@@ -69,6 +69,7 @@ Obs    NAME        SEX         AGE
  5     Henry       M            11
 ---*/
 
+libname dic wpd (wpshelp);
 proc sql;
   select * from mydb.sqlite_master
   where type = 'table';
