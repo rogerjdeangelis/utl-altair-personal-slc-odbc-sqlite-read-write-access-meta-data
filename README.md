@@ -91,7 +91,8 @@ Altair personal slc odbc sqlite read write access meta data
     run;quit;
 
     * LOG: NOTE: DATA SET "WD1X.WD1_CLASSAGES" HAS 6 OBSERVATION(S) AND 3 VARIABLE(S);
-
+     
+    libname dic wpd (wpshelp);
     options nolabel;
     proc sql;
       select libname, memname from dic.vtable where libname in ("WD1X", "SD1X", "MYDB")
